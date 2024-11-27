@@ -1,0 +1,400 @@
+<html>
+
+<head>
+    <title>Mis 15 Luján</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="bootstrap-reboot.css">
+    <link rel="stylesheet" href="style.css?build=@version.1">
+    <link rel="stylesheet" href="animate.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&amp;family=Parisienne&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Sacramento&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link href="all.css" rel="stylesheet">
+    <style>
+        body,
+        header {
+            background-color: #F9F5EF;
+        }
+
+        h2,
+        h3,
+        .countdown .timer div,
+        header h1 {
+            font-family: "Old Standard TT", serif;
+        }
+
+        header h1,
+        .cover .text i,
+        .timer div,
+        .countdown p,
+        .countdown a i,
+        .events .item i,
+        .social .item i,
+        .video span,
+        .gallery span,
+        .hotels span,
+        .hotels .list a i,
+        .gifts i,
+        .modalGift h3,
+        .modalGift .item .right p b,
+        .modalGift .item .right .list a h4,
+        .modalGift .closeModal i,
+        .invites i,
+        .material-symbols-outlined,
+        .invites span,
+        .confirmation .link i,
+        .confirmation .modalGift .contenido-modal .form label,
+        .confirmation .modalGift .contenido-modal span,
+        .confirmation .modalGift .contenido-modal .thanks i,
+        footer p i,
+        .content .info .text i,
+        .cover .text h1,
+        .cover.full.design .text h2,
+        .cover.design .text h2 {
+            color: #DDC190;
+        }
+
+        .story,
+        .gifts a,
+        .gifts button,
+        .gifts,
+        .confirmation,
+        .confirmation .modalGift .contenido-modal .form .container .checkmark:after,
+        .confirmation .modalGift .contenido-modal .form button,
+        .salon .item .right a,
+        .player .icon {
+            background-color: #DDC190;
+        }
+
+        .material-symbols-outlined {
+            font-size: 4rem;
+        }
+    </style>
+</head>
+
+<body cz-shortcut-listen="true" style="overflow: hidden;">
+
+    <!-- ************************************************************************************************************
+                    INVITACIÓN
+**************************************************************************************************************-->
+
+    <div class="intro" id="intro">
+        <div class="top" id="top">
+            <div class="badge" onclick="animar();"><img src="img/sello.png"></div>
+            <img src="img/envelopet.png" class="top hiddenM">
+            <img src="img/envelopetm.png" class="top hiddenL">
+        </div>
+        <div class="bottom" id="bottom"></div>
+    </div>
+    <script src="envelope.js"></script> <span class="player" id="button">
+        <div class="icon"><img src="img/pause.png"></div>
+    </span>
+    <audio id="player" loop="">
+        <source src="musica.mp3" type="audio/mp3">
+    </audio>
+    <header><img src="img/logo.png"></header>
+    <section class="cover">
+        <div class="text">
+            <h2>¡Mis 15!</h2>
+            <p>Y quiero compartirlo contigo.</p>
+            <i class="bi bi-caret-down-fill"></i>
+        </div>
+        <div class="slider" id="slider">
+            <div class="image" style="opacity: 1;"><img src="img/Pd2.jpg"></div>
+            <div class="image" style="opacity: 0;"><img src="img/Pd3.jpg"></div>
+            <div class="image" style="opacity: 0;"><img src="img/Pm1.jpg"></div>
+        </div>
+    </section>
+    <script src="slider.js"></script>
+    <section class="countdown">
+        <p style="font-size:20px">Agenda la fecha</p>
+        <h2>24 de Enero</h2>
+        <div id="countdown" class="timer" data-init-value="01/24/2025 20:00:00">
+            <div class="countdown-box">
+                <div id="days">32</div><span>DÍAS</span>
+            </div>
+            <div class="point">:</div>
+            <div class="countdown-box">
+                <div id="hs">9</div><span>HS</span>
+            </div>
+            <div class="point">:</div>
+            <div class="countdown-box">
+                <div id="min">18</div><span>MIN</span>
+            </div>
+            <div class="point">:</div>
+            <div class="countdown-box">
+                <div id="seg">22</div><span>SEG</span>
+            </div>
+        </div>
+        <!-- <i class="bi bi-calendar-day"></i> Agendar fecha -->
+
+    </section>
+    <script src="countdown.js"></script>
+    <section class="events">
+
+        <!-- <article class="item">
+            <i class="fa-thin fa-church"></i>
+            <h2>Ceremonia</h2>
+            <div>
+                <p><b>Parroquia mi Señora del Rosario</b></p>
+                <p>Bonpland 1987, Buenos Aires</p>
+                <p>29 de Diciembre, 19:30 hs.</p>
+            </div>
+            <a href="https://www.google.com/maps" target="_blank">Cómo llegar</a>
+        </article> -->
+
+        <article class="item">
+            <span class="material-symbols-outlined">celebration</span>
+            <h2>Festejo</h2>
+            <div>
+                <p><b>El Castillo Eventos</b></p>
+                <p>Av. Figueroa Alcorta 5575, BsAs.</p>
+                <p>29 de Diciembre, 20:00 hs.</p>
+            </div>
+            <a href="https://www.google.com/maps" target="_blank">Cómo llegar</a>
+        </article>
+
+        <article class="item">
+            <span class="material-symbols-outlined">checkroom</span>
+            <h2>Dress Code</h2>
+            <div>
+                <p><b>Formal - Elegante</b></p><br>
+            </div>
+            <a href="" target="_blank">Inspirate</a>
+        </article>
+
+    </section>
+    <!-- <section class="story">
+        <div class="image">
+            <img src="img/historia.jpg" alt="mi Historia">
+        </div>
+        <div class="text">
+            <i class="fa-thin fa-heart"></i>
+
+            <h2>mi Historia</h2>
+            <p style="font-size:16px">Dicen que todos los caminos conducen a Roma. Como los mi, que un día de
+                Septiembre hace algunos años, con una selfie y un desayuno dieron como resultado atardeceres en la playa
+                y el comienzo de un amor de verano.
+                <br><br>Luego vinieron viajes, muchas risas, una mudanza, momentos compartidos en familia y aventuras
+                con amigos. Un amor de verano que se transformó en uno para toda la vida
+            </p>
+        </div> 
+    </section> -->
+    <section class="social">
+        <article class="item">
+            <i class="fa-brands fa-youtube"></i>
+            <h2>Mi Playlist</h2>
+            <div>
+                <p>Agrega mi playlist y recomendá las canciones que no pueden faltar en mi fiesta</p>
+            </div>
+            <a href="https://music.youtube.com/" target="_blank">Ir a YoutubeMusic</a>
+        </article>
+
+        <article class="item">
+            <i class="fa-brands fa-instagram"></i>
+            <h2>#Mis15Lujan</h2>
+            <div>
+                <p>Sumate a la fiesta compartiendo fotos y videos con mi hashtag.</p>
+            </div>
+            <a href="https://www.instagram.com/explore/tags/mis15Lujan/" target="_blank">Ir a Instagram</a>
+        </article>
+
+    </section>
+    <section class="gallery">
+        <span>Álbum de Fotos</span>
+
+        <div class="wall">
+            <div class="image"><img onclick="openModal(); currentSlide(1)" src="img/01.jpg" border="0"></div>
+            <div class="image"><img onclick="openModal(); currentSlide(2)" src="img/02.jpg" border="0"></div>
+            <div class="image"><img onclick="openModal(); currentSlide(3)" src="img/03.jpg" border="0"></div>
+            <div class="image"><img onclick="openModal(); currentSlide(4)" src="img/04.jpg" border="0"></div>
+            <div class="image"><img onclick="openModal(); currentSlide(5)" src="img/05.jpg" border="0"></div>
+            <div class="image"><img onclick="openModal(); currentSlide(6)" src="img/06.jpg" border="0"></div>
+            <div class="image"><img onclick="openModal(); currentSlide(7)" src="img/07.jpg" border="0"></div>
+            <div class="image"><img onclick="openModal(); currentSlide(8)" src="img/08.jpg" border="0"></div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()"><i class="fa-thin fa-times"></i></span>
+            <div class="modal-content">
+                <div class="mySlides" style="display: block;"><img src="img/01.jpg" border="0"></div>
+                <div class="mySlides" style="display: none;"><img src="img/02.jpg" border="0"></div>
+                <div class="mySlides" style="display: none;"><img src="img/03.jpg" border="0"></div>
+                <div class="mySlides" style="display: none;"><img src="img/04.jpg" border="0"></div>
+                <div class="mySlides" style="display: none;"><img src="img/05.jpg" border="0"></div>
+                <div class="mySlides" style="display: none;"><img src="img/06.jpg" border="0"></div>
+                <div class="mySlides" style="display: none;"><img src="img/07.jpg" border="0"></div>
+                <div class="mySlides" style="display: none;"><img src="img/08.jpg" border="0"></div>
+            </div>
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)"><i class="bi bi-caret-left-fill"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="bi bi-caret-right-fill"></i></a>
+            <div class="layer" onclick="closeModal()"></div>
+        </div>
+    </section>
+
+    <section class="gifts" style="background-image: url('img/gifts.jpg');">
+        <div class="card">
+            <span class="material-symbols-outlined">
+                featured_seasonal_and_gifts
+            </span>
+            <h2>Regalos</h2>
+            <p>Tu presencia es lo más importante para mi.<br>Si además deseas hacernos un regalo, puedes hacerlo</p>
+            <button class="modal-button" href="#myModal1">Más información</button>
+        </div>
+
+
+        <div class="modalGift" id="myModal1">
+            <div class="contenido-modal">
+                <span class="closeModal"><i class="fa-regular fa-xmark"></i></span>
+
+                <!-- REGALO 1 -->
+                <div class="item">
+                    <div class="left">
+                        <h3>Cuenta Bancaria</h3>
+                    </div>
+                    <div class="right">
+                        <p>Caja de Ahorro en pesos<br> Titular: Lujan Vildósola<br>Alias:evnt.ar</p>
+                        <p><b>CBU:</b></p>
+                        <input type="text" value="0000000000124124124124" id="GfGInput">
+                        <p id="gfg" class="gfg"></p>
+                        <span onclick="GeeksForGeeks()" value="Copy"><i class="fa-regular fa-copy"></i>Copiar CBU</span>
+                    </div>
+                </div>
+                <!-- REGALO 2 -->
+                <div class="item">
+                    <div class="left">
+                        <h3>Urna en Salón</h3>
+                    </div>
+                    <div class="right">
+                        <p>En caso que prefieras regalar en efectivo, tendrás a disposición una urna y sobres en el
+                            salón durante la recepción.</p>
+                        <a href="https://google.com" class="link">Más información</a>
+                    </div>
+                </div>
+                <!-- REGALO 3 -->
+
+                <!-- CATALOGO -->
+            </div>
+        </div>
+    </section>
+    <section class="confirmation">
+        <span class="material-symbols-outlined">
+            inventory
+        </span>
+        <h2>Confirmación de Asistencia</h2>
+        <p>Esperamos contar con tu presencia, no olvides confirmar</p>
+        <!-- DETALLES EXTRA -->
+        <button class="link modal-button" href="#myModal2" style="padding:15px 32px;"><span
+                class="material-symbols-outlined check">
+                check_circle
+            </span>Confirmar Asistencia</button>
+        <div class="modalGift" id="myModal2">
+            <div class="contenido-modal">
+                <span class="closeModal"><span class="material-symbols-outlined" style="font-size: 20px;">
+                        close
+                    </span></span>
+                <div class="cont">
+                    <h2>Confirmación de Asistencia</h2>
+
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSc8Fb9EGoxOAw8HbvW6-zPPg5XSDyMcZBhXjcx8WAszOKW_wg/viewform?embedded=true"
+                        width="640" height="875" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+
+                </div>
+            </div>
+            <div class="thanks" style="display:none;">
+                <i class="fa-thin fa-check-circle"></i>
+                <h2>¡Gracias por confirmar tu asistencia!</h2>
+            </div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <p>✨ Mis 15 Luján ✨</p>
+    </footer>
+
+    <!-- ************************************************************************************************************
+                    SCRIPTS
+**************************************************************************************************************-->
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+        $("input").change(function () {
+
+            $("#asiste").val($("input:checked").val());
+
+        });
+        $(function () {
+            $(".submit").click(function (event) {
+                var asiste = $("#asiste").val();
+                var alimento = $("#alimento").val();
+                var nombre = $("#nombre").val();
+                var nombre_a = $("#nombre_a").val();
+                var traslado = $("#traslado").val();
+                var mail = $("#mail").val();
+                var telefono = $("#telefono").val();
+                var comentarios = $("#comentarios").val();
+
+                var dataString = 'asiste=' + asiste + '&nombre=' + nombre + '&alimento=' + alimento + '&nombre_a=' + nombre_a + '&traslado=' + traslado + '&mail=' + mail + '&telefono=' + telefono + '&comentarios=' + comentarios;
+                console.log(dataString);
+                if (nombre === '') {
+                    $('.error').fadeOut(200).show();
+                } else {
+                    $.ajax({
+                        type: "POST",
+                        url: "_save.php",
+                        data: dataString,
+                        success: function (data) {
+                            $('.thanks').fadeIn(200).show();
+                            $('.cont').fadeOut(200).hide();
+                            $("#data").html(data);
+                        }
+                    });
+                }
+                event.preventDefault();
+            });
+        });
+    </script>
+
+    <script src="modal.js"></script>
+    <script src="lightbox.js"></script>
+    <script>
+        function GeeksForGeeks() {
+            let copyGfGText =
+                document.getElementById("GfGInput");
+
+            copyGfGText.select();
+            document.execCommand("copy");
+
+            document.getElementById("gfg")
+                .innerHTML = "<span class='material-symbols-outlined'>check_circle</span>Copiado en portapapeles!";
+        }
+
+        var button = document.getElementById("button");
+        var audio = document.getElementById("player");
+        button.addEventListener("click", function () {
+            if (audio.paused) {
+                audio.play();
+                button.innerHTML = "<div class='icon'><img src='img/play.gif'/></div>";
+            } else {
+                audio.pause();
+                button.innerHTML = "<div class='icon'><img src='img/pause.png'/></div>";
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
