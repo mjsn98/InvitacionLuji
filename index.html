@@ -337,45 +337,34 @@
 
                     <div class="form">
                         <div class="msj error" style="display:none">Por favor completa todos los campos</div>
-                        <form method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc8Fb9EGoxOAw8HbvW6-zPPg5XSDyMcZBhXjcx8WAszOKW_wg/formResponse" target="_blank" style="width:100%;">
-                            <div class="radio"> 
-                                <label class="container" style="font-weight:600;">Asistiré 
-                                    <input type="radio" checked="checked" value="Asistiré" name="entry.591732756"> 
-                                    <span class="checkmark"></span> 
-                                </label> 
-                                <label class="container" style="font-weight:600;">No Asistiré 
-                                    <input type="radio" value="No Asistiré" name="entry.591732756"> 
-                                    <span class="checkmark"></span> 
-                                </label> 
-                            </div>
-                            <label>Nombre y Apellido</label> 
-                            <input type="text" name="entry.1125211510" id="nombre" value=""> 
-
-                            <label>¿Qué canción no puede faltar?</label> 
-                            <input type="text"name="entry.963501327" id="cancion"> 
-
-                            <label>Nombre y Apellido (acompañantes)</label>
-                            <input type="text" name="entry.270185246" id="nombre_a"> 
-
-                            <input type="hidden" name="fvv" value="1"> 
-                            <input type="hidden" name="partialResponse" value="[null,null,'-2857987365953344607']"> 
-                            <input type="hidden" name="pageHistory" value="0"> 
-                            <input type="hidden" name="fbzx" value="-2857987365953344607"> 
-                            <input type="hidden" name="submissionTimestamp" value="1732936845192"> 
-                            <button class="submit"type="submit" name="save" style="color:#fff;"> 
-                                <i class="bi bi-check2-all"style="color:#fff;"></i>Confirmar Asistencia 
-                            </button>
+                        <form method="post"
+                            action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc8Fb9EGoxOAw8HbvW6-zPPg5XSDyMcZBhXjcx8WAszOKW_wg/formResponse"
+                            onsubmit="submitForm();" target="hidden_iframe" style="width:100%;">
+                            <div class="radio"> <label class="container" style="font-weight:600;">Asistiré <input
+                                        type="radio" checked="checked" value="Asistiré" name="entry.591732756"> <span
+                                        class="checkmark"></span> </label> <label class="container"
+                                    style="font-weight:600;">No Asistiré <input type="radio" value="No Asistiré"
+                                        name="entry.591732756"> <span class="checkmark"></span> </label> </div>
+                            <label>Nombre y Apellido</label> <input type="text" name="entry.1125211510" id="nombre"
+                                value=""> <label>¿Qué canción no puede faltar?</label> <input type="text"
+                                name="entry.963501327" id="cancion"> <label>Nombre y Apellido (acompañantes)</label>
+                            <input type="text" name="entry.270185246" id="nombre_a"> <input type="hidden" name="fvv"
+                                value="1"> <input type="hidden" name="partialResponse"
+                                value="[null,null,'-2857987365953344607']"> <input type="hidden" name="pageHistory"
+                                value="0"> <input type="hidden" name="fbzx" value="-2857987365953344607"> <input
+                                type="hidden" name="submissionTimestamp" value="1732936845192"> <button class="submit"
+                                type="submit" name="save" style="color:#fff;"> <i class="bi bi-check2-all"
+                                    style="color:#fff;"></i>Confirmar Asistencia </button>
                             <div id="data"></div>
-
+                            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                                onload="iframeOnLoad();"></iframe>
                         </form>
                     </div>
-                </div>
-                <div class="thanks" style="display:none;">
-                    <i class="fa-thin fa-check-circle"></i>
-                    <h2>¡Gracias por confirmar tu asistencia!</h2>
+                    <div class="thanks" style="display:none;"> <i class="fa-thin fa-check-circle"></i>
+                        <h2>¡Gracias por confirmar tu asistencia!</h2>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
     <footer>
         <p>✨ Mis 15 Luján ✨</p>
@@ -385,7 +374,18 @@
                     SCRIPTS
 **************************************************************************************************************-->
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-    <script type="text/javascript">
+    <script>
+        var submitted = false;
+        function submitForm() {
+            submitted = true;
+        }
+        function iframeOnLoad() {
+            if (submitted) {
+                window.location.reload();
+            }
+        } 
+    </script>
+    <!-- <script type="text/javascript">
         $("input").change(function () {
 
             $("#asiste").val($("input:checked").val());
@@ -417,7 +417,7 @@
                 event.preventDefault();
             });
         });
-    </script>
+    </script> -->
 
     <script src="modal.js"></script>
     <script src="lightbox.js"></script>
