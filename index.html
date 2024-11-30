@@ -360,7 +360,7 @@
                                 onload="iframeOnLoad();"></iframe>
                         </form>
                     </div>
-                    <div class="thanks" style="display:none;"> <i class="fa-thin fa-check-circle"></i>
+                    <div class="thanks" style="display:none;"> <i class="bi bi-check-circle-fill"></i><br>
                         <h2>¡Gracias por confirmar tu asistencia!</h2>
                     </div>
                 </div>
@@ -381,7 +381,12 @@
         }
         function iframeOnLoad() {
             if (submitted) {
-                window.location.reload();
+                // var modal = document.getElementById("myModal2"); 
+                // modal.style.display = "none"; 
+                // submitted = false;
+                document.querySelector('.thanks').style.display = 'block';
+                document.querySelector('.form').style.display = 'none'; 
+                submitted = false; 
             }
         } 
     </script>
