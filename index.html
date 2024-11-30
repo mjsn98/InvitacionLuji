@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&amp;family=Parisienne&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Sacramento&amp;display=swap"
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&amp;family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&amp;family=Parisienne&amp;family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Sacramento&amp;family=Corinthia:wght@400;700&display=swap"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
         rel="stylesheet">
@@ -35,6 +35,7 @@
         .countdown .timer div,
         header h1 {
             font-family: "Old Standard TT", serif;
+            color: rgb(68, 68, 68);
         }
 
         header h1,
@@ -65,7 +66,7 @@
         .cover .text h1,
         .cover.full.design .text h2,
         .cover.design .text h2 {
-            color: #DDC190;
+            color: #b3a5d5;
         }
 
         .story,
@@ -77,7 +78,7 @@
         .confirmation .modalGift .contenido-modal .form button,
         .salon .item .right a,
         .player .icon {
-            background-color: #DDC190;
+            background-color: #b2a3ca;
         }
 
         .material-symbols-outlined {
@@ -121,10 +122,13 @@
     </section>
     <script src="slider.js"></script>
     <section class="countdown">
-        <p style="font-size:20px">Agenda la fecha</p>
+        <p class="countdown-texto" style="font-size: 20px;
+        font-weight: 200;
+        color: #7d61ab;
+        font-family: emoji;text-transform: unset;letter-spacing: normal;">Agenda la fecha</p>
         <h2>24 de Enero</h2>
         <div class="d-flex justify-content-center countdown-container">
-            
+
             <div id="countdown" class="timer" data-init-value="01/24/2025 20:00:00">
                 <img src="img/marco-cuentaregresiva.png" alt="marco cuenta regresiva" srcset="" class="marco-countdown">
                 <div>
@@ -171,7 +175,9 @@
             <span class="material-symbols-outlined">celebration</span>
             <h2>Festejo</h2>
             <div>
-                <p><b>El Castillo Eventos</b></p>
+                <p>
+                <h6>El Castillo Eventos</h6>
+                </p>
                 <p>Av. Figueroa Alcorta 5575, BsAs.</p>
                 <p>29 de Diciembre, 20:00 hs.</p>
             </div>
@@ -182,9 +188,12 @@
             <span class="material-symbols-outlined">checkroom</span>
             <h2>Dress Code</h2>
             <div>
-                <p><b>Formal - Elegante</b></p><br>
+                <p>
+                <h6>Formal - Sport</h6>
+                </p>
             </div>
-            <a href="" target="_blank">Inspirate</a>
+            <a href="https://es.pinterest.com/search/pins/?q=formal%20sport%20mujer&rs=typed"
+                target="_blank">Inspirate</a>
         </article>
 
     </section>
@@ -209,9 +218,11 @@
             <i class="fa-brands fa-youtube"></i>
             <h2>Mi Playlist</h2>
             <div>
-                <p>Agrega mi playlist y recomendá las canciones que no pueden faltar en mi fiesta</p>
+                <p>¡Agrega mi playlist! <br> Al confirmar puedes recomendar las canciones que no pueden faltar en mi
+                    fiesta</p>
             </div>
-            <a href="https://music.youtube.com/" target="_blank">Ir a YoutubeMusic</a>
+            <a href="https://music.youtube.com/playlist?list=PLNFk3F_FGLWxzrKOfQ7aPUOvjj85R36eB&si=ZHNgoXWGOTd5miEz"
+                target="_blank">Ir a Youtube Music</a>
         </article>
 
         <article class="item">
@@ -225,7 +236,7 @@
 
     </section>
     <section class="gallery">
-        <span>Álbum de Fotos</span>
+        <h2>Álbum de Fotos</h2>
 
         <div class="wall">
             <div class="image"><img onclick="openModal(); currentSlide(1)" src="img/01.jpg" border="0"></div>
@@ -269,7 +280,9 @@
 
         <div class="modalGift" id="myModal1">
             <div class="contenido-modal">
-                <span class="closeModal"><i class="fa-regular fa-xmark"></i></span>
+                <span class="closeModal"><span class="material-symbols-outlined" style="font-size: 20px;">
+                        close
+                    </span></span>
 
                 <!-- REGALO 1 -->
                 <div class="item">
@@ -281,7 +294,7 @@
                         <p><b>CBU:</b></p>
                         <input type="text" value="0000000000124124124124" id="GfGInput">
                         <p id="gfg" class="gfg"></p>
-                        <span onclick="GeeksForGeeks()" value="Copy"><i class="fa-regular fa-copy"></i>Copiar CBU</span>
+                        <span onclick="GeeksForGeeks()" value="Copy"><i class="bi bi-check2-all"></i>Copiar CBU</span>
                     </div>
                 </div>
                 <!-- REGALO 2 -->
@@ -292,8 +305,11 @@
                     <div class="right">
                         <p>En caso que prefieras regalar en efectivo, tendrás a disposición una urna y sobres en el
                             salón durante la recepción.</p>
-                        <a href="https://google.com" class="link">Más información</a>
+
                     </div>
+                    <span class="material-symbols-outlined" style="font-size: 45px;">
+                        diagnosis
+                    </span>
                 </div>
                 <!-- REGALO 3 -->
 
@@ -308,10 +324,9 @@
         <h2>Confirmación de Asistencia</h2>
         <p>Esperamos contar con tu presencia, no olvides confirmar</p>
         <!-- DETALLES EXTRA -->
-        <button class="link modal-button" href="#myModal2" style="padding:15px 32px;"><span
-                class="material-symbols-outlined check">
-                check_circle
-            </span>Confirmar Asistencia</button>
+        <button class="link modal-button" href="#myModal2" style="padding:15px 32px;"><i class="bi bi-check2-circle"
+                style="font-size:20px;padding-right:5px;"></i>Confirmar Asistencia</button>
+
         <div class="modalGift" id="myModal2">
             <div class="contenido-modal">
                 <span class="closeModal"><span class="material-symbols-outlined" style="font-size: 20px;">
@@ -320,17 +335,46 @@
                 <div class="cont">
                     <h2>Confirmación de Asistencia</h2>
 
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSc8Fb9EGoxOAw8HbvW6-zPPg5XSDyMcZBhXjcx8WAszOKW_wg/viewform?embedded=true"
-                        width="640" height="875" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+                    <div class="form">
+                        <div class="msj error" style="display:none">Por favor completa todos los campos</div>
+                        <form method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc8Fb9EGoxOAw8HbvW6-zPPg5XSDyMcZBhXjcx8WAszOKW_wg/formResponse" target="_blank" style="width:100%;">
+                            <div class="radio"> 
+                                <label class="container" style="font-weight:600;">Asistiré 
+                                    <input type="radio" checked="checked" value="Asistiré" name="entry.591732756"> 
+                                    <span class="checkmark"></span> 
+                                </label> 
+                                <label class="container" style="font-weight:600;">No Asistiré 
+                                    <input type="radio" value="No Asistiré" name="entry.591732756"> 
+                                    <span class="checkmark"></span> 
+                                </label> 
+                            </div>
+                            <label>Nombre y Apellido</label> 
+                            <input type="text" name="entry.1125211510" id="nombre" value=""> 
 
+                            <label>¿Qué canción no puede faltar?</label> 
+                            <input type="text"name="entry.963501327" id="cancion"> 
+
+                            <label>Nombre y Apellido (acompañantes)</label>
+                            <input type="text" name="entry.270185246" id="nombre_a"> 
+
+                            <input type="hidden" name="fvv" value="1"> 
+                            <input type="hidden" name="partialResponse" value="[null,null,'-2857987365953344607']"> 
+                            <input type="hidden" name="pageHistory" value="0"> 
+                            <input type="hidden" name="fbzx" value="-2857987365953344607"> 
+                            <input type="hidden" name="submissionTimestamp" value="1732936845192"> 
+                            <button class="submit"type="submit" name="save" style="color:#fff;"> 
+                                <i class="bi bi-check2-all"style="color:#fff;"></i>Confirmar Asistencia 
+                            </button>
+                            <div id="data"></div>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="thanks" style="display:none;">
+                    <i class="fa-thin fa-check-circle"></i>
+                    <h2>¡Gracias por confirmar tu asistencia!</h2>
                 </div>
             </div>
-            <div class="thanks" style="display:none;">
-                <i class="fa-thin fa-check-circle"></i>
-                <h2>¡Gracias por confirmar tu asistencia!</h2>
-            </div>
-        </div>
         </div>
     </section>
     <footer>
@@ -350,22 +394,18 @@
         $(function () {
             $(".submit").click(function (event) {
                 var asiste = $("#asiste").val();
-                var alimento = $("#alimento").val();
                 var nombre = $("#nombre").val();
+                var cancion = $("#cancion").val();
                 var nombre_a = $("#nombre_a").val();
-                var traslado = $("#traslado").val();
-                var mail = $("#mail").val();
-                var telefono = $("#telefono").val();
-                var comentarios = $("#comentarios").val();
 
-                var dataString = 'asiste=' + asiste + '&nombre=' + nombre + '&alimento=' + alimento + '&nombre_a=' + nombre_a + '&traslado=' + traslado + '&mail=' + mail + '&telefono=' + telefono + '&comentarios=' + comentarios;
+                var dataString = 'asiste=' + asiste + '&nombre=' + nombre + '&cancion=' + cancion + '&nombre_a=' + nombre_a;
                 console.log(dataString);
                 if (nombre === '') {
                     $('.error').fadeOut(200).show();
                 } else {
                     $.ajax({
                         type: "POST",
-                        url: "_save.php",
+                        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc8Fb9EGoxOAw8HbvW6-zPPg5XSDyMcZBhXjcx8WAszOKW_wg/formResponse",
                         data: dataString,
                         success: function (data) {
                             $('.thanks').fadeIn(200).show();
@@ -390,7 +430,7 @@
             document.execCommand("copy");
 
             document.getElementById("gfg")
-                .innerHTML = "<span class='material-symbols-outlined'>check_circle</span>Copiado en portapapeles!";
+                .innerHTML = "<i class='bi bi-check2-all text-success'></i>Copiado en portapapeles!";
         }
 
         var button = document.getElementById("button");
