@@ -524,6 +524,24 @@ header {
   justify-content: center;
   padding-top: 5px;
   top: 0;
+  border-bottom: 4px solid #d4af37;
+  /* Borde inferior dorado */
+  animation: shimmer 2s infinite;
+  /* Efecto de brillo */
+}
+
+@keyframes shimmer {
+  0% {
+    border-bottom-color: #d4af37;
+  }
+
+  50% {
+    border-bottom-color: #ffd700;
+  }
+
+  100% {
+    border-bottom-color: #d4af37;
+  }
 }
 
 header h1 {
@@ -730,6 +748,10 @@ header h1 {
   border-bottom: 1px solid rgba(135, 135, 135, 0.2);
 }
 
+.countdown .time {
+  font-size: 20px;
+}
+
 .countdown h2 {
   font-size: 32px;
   font-weight: 200;
@@ -750,8 +772,19 @@ header h1 {
   justify-content: center;
   gap: 20px;
   padding: 30px 0px;
-  height: 148px;
+  height: 300px;
   margin-bottom: 24px;
+  width: 300px;
+  border-radius: 100%;
+}
+
+.marco-countdown {
+  position: absolute;
+  right: -20px;
+}
+
+.timer {
+  position: relative;
 }
 
 .countdown .timer .point {
@@ -767,13 +800,13 @@ header h1 {
 }
 
 .countdown .timer div span {
-  font-size: 11px;
+  font-size: 30px;
   display: block;
   text-align: center;
   text-transform: uppercase;
   margin-top: -5px;
   color: #666;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "ui-monospace";
 }
 
 .countdown a {
@@ -1912,7 +1945,7 @@ footer p a {
   }
 
   .intro .bottom {
-    background-image: url("img/envelopebm.png");
+    background-image: url("img/envelopeb.png");
   }
 
   .cover {
@@ -1946,7 +1979,6 @@ footer p a {
   }
 
   .countdown .timer {
-    height: 100px;
     padding: 0 34px;
     gap: 0px;
     justify-content: space-between;
@@ -2170,7 +2202,7 @@ footer p a {
   }
 
   .intro .bottom {
-    background-image: url("img/envelopebm.png");
+    background-image: url("img/envelopeb.png");
   }
 
   .cover {
@@ -2187,8 +2219,7 @@ footer p a {
   }
 
   .countdown .timer {
-    height: 100px;
-    padding: 0 84px;
+    padding: 0 34px;
     gap: 0px;
     justify-content: space-between;
   }
@@ -2387,7 +2418,7 @@ footer p a {
   }
 
   .intro .bottom {
-    background-image: url("img/envelopebm.png");
+    background-image: url("img/envelopeb.png");
   }
 
   .cover .text h2 {

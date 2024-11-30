@@ -15,15 +15,15 @@ function showRemaining() {
     var minutes = Math.floor((distance % _hour) / _minute);
     var seconds = Math.floor((distance % _minute) / _second);
     if (distance < 0) {
-        document.getElementById("days").innerHTML = 0;
-        document.getElementById("hs").innerHTML = 0;
-        document.getElementById("min").innerHTML = 0;
-        document.getElementById("seg").innerHTML = 0;
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hs").innerHTML = "00";
+        document.getElementById("min").innerHTML = "00";
+        document.getElementById("seg").innerHTML = "00";
     } else {
-        document.getElementById("days").innerHTML = days;
-        document.getElementById("hs").innerHTML = hours;
-        document.getElementById("min").innerHTML = minutes;
-        document.getElementById("seg").innerHTML = seconds;
+        document.getElementById("days").innerHTML = String(days).padStart(2, '0');
+        document.getElementById("hs").innerHTML = String(hours).padStart(2, '0');
+        document.getElementById("min").innerHTML = String(minutes).padStart(2, '0');
+        document.getElementById("seg").innerHTML = String(seconds).padStart(2, '0');
     }
 
 }
