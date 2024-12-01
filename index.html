@@ -27,7 +27,7 @@
     <style>
         body,
         header {
-            background-color: #F9F5EF;
+            background-color: #f4f5f0;
         }
 
         h2,
@@ -78,7 +78,7 @@
         .confirmation .modalGift .contenido-modal .form button,
         .salon .item .right a,
         .player .icon {
-            background-color: #b2a3ca;
+            background-color: #b3a5d5;
         }
 
         .material-symbols-outlined {
@@ -107,7 +107,10 @@
     <audio id="player" loop="">
         <source src="mp3/Al-Sol.mp3" type="audio/mp3">
     </audio>
-    <header><img src="img/logo.png"></header>
+    <header>
+        <!-- <img src="img/logo.png"> -->
+        <p class="text-fix mb-0">Luján Vildósola</p>
+    </header>
     <section class="cover">
         <div class="text">
             <h2>¡Mis 15!</h2>
@@ -124,12 +127,12 @@
     <section class="countdown">
         <p class="countdown-texto" style="font-size: 20px;
         font-weight: 200;
-        color: #7d61ab;
+        color: #b3a5d5;
         font-family: emoji;text-transform: unset;letter-spacing: normal;">Agenda la fecha</p>
         <h2>24 de Enero</h2>
         <div class="d-flex justify-content-center countdown-container">
 
-            <div id="countdown" class="timer" data-init-value="01/24/2025 20:00:00">
+            <div id="countdown" class="timer" data-init-value="01/24/2025 21:00:00">
                 <img src="img/marco-cuentaregresiva.png" alt="marco cuenta regresiva" srcset="" class="marco-countdown">
                 <div>
                     <span class="time" id="days">32</span>
@@ -158,33 +161,27 @@
 
     </section>
     <script src="countdown.js"></script>
-    <section class="events">
-
-        <!-- <article class="item">
-            <i class="fa-thin fa-church"></i>
-            <h2>Ceremonia</h2>
-            <div>
-                <p><b>Parroquia mi Señora del Rosario</b></p>
-                <p>Bonpland 1987, Buenos Aires</p>
-                <p>29 de Diciembre, 19:30 hs.</p>
-            </div>
-            <a href="https://www.google.com/maps" target="_blank">Cómo llegar</a>
-        </article> -->
-
+    <section class="events position-relative">
+        <img src="img/deco-Invitacion/5.png" alt="flor 5" srcset="" class="position-absolute top-50 start-0">
+        <img src="img/deco-Invitacion/5.png" alt="flor 5" srcset="" class="position-absolute top-0 end-0">
         <article class="item">
+            
             <span class="material-symbols-outlined">celebration</span>
             <h2>Festejo</h2>
             <div>
                 <p>
-                <h6>El Castillo Eventos</h6>
+                <h6>Salón Mary Mary Eventos</h6>
                 </p>
-                <p>Av. Figueroa Alcorta 5575, BsAs.</p>
-                <p>29 de Diciembre, 20:00 hs.</p>
+                <p>24 de Enero, 21:00 hs.</p>
             </div>
-            <a href="https://www.google.com/maps" target="_blank">Cómo llegar</a>
+            <a href="https://maps.app.goo.gl/qUxonHVe77jdMc158" target="_blank" class="d-flex"><span
+                    class="material-symbols-outlined" style="font-size:20px">
+                    location_on
+                </span>Cómo llegar</a>
         </article>
 
         <article class="item">
+            
             <span class="material-symbols-outlined">checkroom</span>
             <h2>Dress Code</h2>
             <div>
@@ -214,6 +211,9 @@
         </div> 
     </section> -->
     <section class="social">
+        <img src="img/deco-Invitacion/6.png" alt="flor 6" srcset="" class="position-absolute top-50 start-0">
+        
+        <img src="img/deco-Invitacion/8.png" alt="flor 6" srcset="" class="position-absolute top-0 end-0">
         <article class="item">
             <i class="fa-brands fa-youtube"></i>
             <h2>Mi Playlist</h2>
@@ -236,8 +236,8 @@
 
     </section>
     <section class="gallery">
+        <img src="img/deco-Invitacion/7.png" alt="flor 6" srcset="" class="position-absolute top-0 end-0">
         <h2>Álbum de Fotos</h2>
-
         <div class="wall">
             <div class="image"><img onclick="openModal(); currentSlide(1)" src="img/01.jpg" border="0"></div>
             <div class="image"><img onclick="openModal(); currentSlide(2)" src="img/02.jpg" border="0"></div>
@@ -249,8 +249,10 @@
             <div class="image"><img onclick="openModal(); currentSlide(8)" src="img/08.jpg" border="0"></div>
         </div>
         <div id="myModal" class="modal">
-            <span class="close" onclick="closeModal()"><i class="fa-thin fa-times"></i></span>
-            <div class="modal-content">
+            <span class="close" onclick="closeModal()"><span class="material-symbols-outlined" style="font-size: 20px;">
+                    close
+                </span></span>
+            <div class="modal-content" style="width: 50%;">
                 <div class="mySlides" style="display: block;"><img src="img/01.jpg" border="0"></div>
                 <div class="mySlides" style="display: none;"><img src="img/02.jpg" border="0"></div>
                 <div class="mySlides" style="display: none;"><img src="img/03.jpg" border="0"></div>
@@ -385,44 +387,11 @@
                 // modal.style.display = "none"; 
                 // submitted = false;
                 document.querySelector('.thanks').style.display = 'block';
-                document.querySelector('.form').style.display = 'none'; 
-                submitted = false; 
+                document.querySelector('.form').style.display = 'none';
+                submitted = false;
             }
         } 
     </script>
-    <!-- <script type="text/javascript">
-        $("input").change(function () {
-
-            $("#asiste").val($("input:checked").val());
-
-        });
-        $(function () {
-            $(".submit").click(function (event) {
-                var asiste = $("#asiste").val();
-                var nombre = $("#nombre").val();
-                var cancion = $("#cancion").val();
-                var nombre_a = $("#nombre_a").val();
-
-                var dataString = 'asiste=' + asiste + '&nombre=' + nombre + '&cancion=' + cancion + '&nombre_a=' + nombre_a;
-                console.log(dataString);
-                if (nombre === '') {
-                    $('.error').fadeOut(200).show();
-                } else {
-                    $.ajax({
-                        type: "POST",
-                        url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSc8Fb9EGoxOAw8HbvW6-zPPg5XSDyMcZBhXjcx8WAszOKW_wg/formResponse",
-                        data: dataString,
-                        success: function (data) {
-                            $('.thanks').fadeIn(200).show();
-                            $('.cont').fadeOut(200).hide();
-                            $("#data").html(data);
-                        }
-                    });
-                }
-                event.preventDefault();
-            });
-        });
-    </script> -->
 
     <script src="modal.js"></script>
     <script src="lightbox.js"></script>

@@ -10,6 +10,12 @@
   border-radius: 10px;
 }
 
+.text-fix {
+  color: #b3a5d5;
+  font-family: 'Corinthia';
+  font-size: 3rem;
+}
+
 body {
   font-family: "Nunito Sans", sans-serif;
   color: #666;
@@ -532,15 +538,15 @@ header {
 
 @keyframes shimmer {
   0% {
-    border-bottom-color: #a7a3ca;
+    border-bottom-color: #b3a5d5;
   }
 
   50% {
-    border-bottom-color: #9d91df;
+    border-bottom-color: #d9d1eb;
   }
 
   100% {
-    border-bottom-color: #b3a5d5;
+    border-bottom-color: #dad2eb;
   }
 }
 
@@ -780,7 +786,7 @@ header h1 {
 
 .marco-countdown {
   position: absolute;
-  right: -20px;
+  right: -30px;
 }
 
 .timer {
@@ -838,7 +844,7 @@ header h1 {
 
 .events {
   width: 100%;
-  padding: 100px 0px;
+  padding: 100px 0;
   position: relative;
   text-align: center;
   border-bottom: 1px solid rgba(135, 135, 135, 0.2);
@@ -847,6 +853,7 @@ header h1 {
   justify-content: center;
   gap: 24px;
 }
+
 
 .events .item {
   width: 350px;
@@ -1185,10 +1192,10 @@ header h1 {
 }
 
 .gallery h2 {
-  font-size: 32px;
   font-weight: 200;
-  color: #7d61ab;
-  font-family: emoji;
+  color: #b3a5d5;
+  font-family: 'Corinthia';
+  font-size: 3rem;
 }
 
 .gallery span {
@@ -2412,10 +2419,6 @@ footer p a {
     height: 100px;
     margin-left: -50px;
     bottom: 45px;
-  }
-
-  .intro .top .badge img {
-    width: 60%;
   }
 
   .intro .bottom {
