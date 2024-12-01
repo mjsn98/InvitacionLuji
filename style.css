@@ -635,9 +635,9 @@ header h1 {
   bottom: 0px;
   z-index: 999;
   height: 100%;
-  padding: 0 24px 120px 24px;
+  padding: 0 24px 50px 24px;
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgb(109 79 203 / 83%) 0%, rgb(0 0 0 / 18%) 100%);
 }
 
 .cover .text img {
@@ -1891,7 +1891,12 @@ footer p a {
   text-decoration: none;
   color: #fff;
 }
-
+@media (min-width: 100px) and (max-width: 470px) {
+  
+  .img-flores{
+    width: 120px;
+  }
+}
 @media (min-width: 100px) and (max-width: 1600px) {
   .cover {
     width: calc(100% - 48px);
@@ -2391,6 +2396,7 @@ footer p a {
   .salon .item .right {
     text-align: center;
   }
+  
 }
 
 @media (min-width: 769px) and (max-width: 998px) {
