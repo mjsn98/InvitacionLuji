@@ -13,7 +13,9 @@
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Corinthia:wght@400;700&family=Fleur+De+Leah&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Corinthia:wght@400;700&family=Fleur+De+Leah&family=Great+Vibes&display=swap"
+        rel="stylesheet">
 
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
@@ -83,6 +85,12 @@
 
         .material-symbols-outlined {
             font-size: 4rem;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -164,7 +172,7 @@
         <img src="img/deco-Invitacion/5.png" alt="flor 5" srcset="" class="img-flores position-absolute top-50 start-0">
         <img src="img/deco-Invitacion/5.png" alt="flor 5" srcset="" class="img-flores position-absolute top-0 end-0">
         <article class="item">
-            
+
             <span class="material-symbols-outlined">celebration</span>
             <h2>Festejo</h2>
             <div>
@@ -173,14 +181,14 @@
                 </p>
                 <p>24 de Enero, 21:00 hs.</p>
             </div>
-            <a href="https://maps.app.goo.gl/qUxonHVe77jdMc158" target="_blank" class="d-flex"><span
+            <a href="https://maps.app.goo.gl/AfEkGVLddePJNfLt9" target="_blank" class="d-flex"><span
                     class="material-symbols-outlined" style="font-size:20px">
                     location_on
                 </span>Cómo llegar</a>
         </article>
 
         <article class="item">
-            
+
             <span class="material-symbols-outlined">checkroom</span>
             <h2>Dress Code</h2>
             <div>
@@ -210,9 +218,10 @@
         </div> 
     </section> -->
     <section class="social">
-        <img src="img/deco-Invitacion/6.png" alt="flor 6" srcset="" class="img-flores position-absolute top-50 start-0">
-        
-        <img src="img/deco-Invitacion/8.png" alt="flor 6" srcset="" class="img-flores position-absolute top-0 end-0">
+        <img src="img/deco-Invitacion/6.png" alt="flor 6" srcset=""
+            class="img-flores position-absolute bottom-0 start-0">
+
+        <img src="img/deco-Invitacion/8.png" alt="flor 8" srcset="" class="img-flores position-absolute top-0 end-0">
         <article class="item">
             <i class="fa-brands fa-youtube"></i>
             <h2>Mi Playlist</h2>
@@ -224,49 +233,50 @@
                 target="_blank">Ir a Youtube Music</a>
         </article>
 
-        <article class="item">
-            <i class="fa-brands fa-instagram"></i>
-            <h2>#Mis15Lujan</h2>
-            <div>
-                <p>Sumate a la fiesta compartiendo fotos y videos con mi hashtag.</p>
-            </div>
-            <a href="https://www.instagram.com/explore/tags/mis15Lujan/" target="_blank">Ir a Instagram</a>
-        </article>
-
     </section>
-    <section class="gallery">
-        <img src="img/deco-Invitacion/7.png" alt="flor 6" srcset="" class="img-flores position-absolute top-0 end-0">
+    <section class="gallery position-relative">
+        <img src="img/deco-Invitacion/7.png" alt="flor 6" class="img-flores position-absolute top-0 end-0">
         <h2>Álbum de Fotos</h2>
-        <div class="wall">
-            <div class="image"><img onclick="openModal(); currentSlide(1)" src="img/01.jpg" border="0"></div>
-            <div class="image"><img onclick="openModal(); currentSlide(2)" src="img/02.jpg" border="0"></div>
-            <div class="image"><img onclick="openModal(); currentSlide(3)" src="img/03.jpg" border="0"></div>
-            <div class="image"><img onclick="openModal(); currentSlide(4)" src="img/04.jpg" border="0"></div>
-            <div class="image"><img onclick="openModal(); currentSlide(5)" src="img/05.jpg" border="0"></div>
-            <div class="image"><img onclick="openModal(); currentSlide(6)" src="img/06.jpg" border="0"></div>
-            <div class="image"><img onclick="openModal(); currentSlide(7)" src="img/07.jpg" border="0"></div>
-            <div class="image"><img onclick="openModal(); currentSlide(8)" src="img/08.jpg" border="0"></div>
-        </div>
-        <div id="myModal" class="modal">
-            <span class="close" onclick="closeModal()"><span class="material-symbols-outlined" style="font-size: 20px;">
-                    close
-                </span></span>
-            <div class="modal-content" style="width: 50%;">
-                <div class="mySlides" style="display: block;"><img src="img/01.jpg" border="0"></div>
-                <div class="mySlides" style="display: none;"><img src="img/02.jpg" border="0"></div>
-                <div class="mySlides" style="display: none;"><img src="img/03.jpg" border="0"></div>
-                <div class="mySlides" style="display: none;"><img src="img/04.jpg" border="0"></div>
-                <div class="mySlides" style="display: none;"><img src="img/05.jpg" border="0"></div>
-                <div class="mySlides" style="display: none;"><img src="img/06.jpg" border="0"></div>
-                <div class="mySlides" style="display: none;"><img src="img/07.jpg" border="0"></div>
-                <div class="mySlides" style="display: none;"><img src="img/08.jpg" border="0"></div>
+        <center>
+            <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center"
+                data-bs-ride="carousel" style="max-width: 800px;">
+                <div class="carousel-indicators"> <button type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <button
+                        type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button> <button type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button> <button type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                </div>
+                <div class="carousel-inner" style="max-width:300px;">
+                    <div class="carousel-item active"> <img src="img/01.jpg" class="d-block" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/02.jpg" class="d-block" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/03.jpg" class="d-block" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/04.jpg" class="d-block" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/05.jpg" class="d-block" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/06.jpg" class="d-block" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/07.jpg" class="d-block" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/08.jpg" class="d-block" alt="..."> </div>
+                </div>
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"> <i class="bi bi-arrow-left-circle-fill display-3" style="color:#b3a5d5"></i><span
+                        class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleIndicators" data-bs-slide="next"> <i class="bi bi-arrow-right-circle-fill display-3" style="color: #b3a5d5;"></i> <span
+                        class="visually-hidden">Next</span>
+                </button>
             </div>
-            <!-- Next/previous controls -->
-            <a class="prev" onclick="plusSlides(-1)"><i class="bi bi-caret-left-fill"></i></a>
-            <a class="next" onclick="plusSlides(1)"><i class="bi bi-caret-right-fill"></i></a>
-            <div class="layer" onclick="closeModal()"></div>
-        </div>
+        </center>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
     <section class="gifts" style="background-image: url('img/gifts.jpg');">
         <div class="card">
@@ -291,11 +301,12 @@
                         <h3>Cuenta Bancaria</h3>
                     </div>
                     <div class="right">
-                        <p>Caja de Ahorro en pesos<br> Titular: Lujan Vildósola<br>Alias:evnt.ar</p>
-                        <p><b>CBU:</b></p>
-                        <input type="text" value="0000000000124124124124" id="GfGInput">
+                        <p><b>Mercado Pago</b> <b>Titular:</b> Lujan Vildósola<br><b>Alias:</b>lujivil</p>
+                        <p><b>CVU:</b></p>
+                        <input type="text" value="0000003100038827193890" id="GfGInput">
                         <p id="gfg" class="gfg"></p>
-                        <span onclick="GeeksForGeeks()" value="Copy"><i class="bi bi-check2-all"></i>Copiar CBU</span>
+                        <span onclick="GeeksForGeeks()" value="Copy"><i class="bi bi-check2-all"></i>Copiar
+                            CBU</span>
                     </div>
                 </div>
                 <!-- REGALO 2 -->
@@ -342,8 +353,8 @@
                             action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc8Fb9EGoxOAw8HbvW6-zPPg5XSDyMcZBhXjcx8WAszOKW_wg/formResponse"
                             onsubmit="submitForm();" target="hidden_iframe" style="width:100%;">
                             <div class="radio"> <label class="container" style="font-weight:600;">Asistiré <input
-                                        type="radio" checked="checked" value="Asistiré" name="entry.591732756"> <span
-                                        class="checkmark"></span> </label> <label class="container"
+                                        type="radio" checked="checked" value="Asistiré" name="entry.591732756">
+                                    <span class="checkmark"></span> </label> <label class="container"
                                     style="font-weight:600;">No Asistiré <input type="radio" value="No Asistiré"
                                         name="entry.591732756"> <span class="checkmark"></span> </label> </div>
                             <label>Nombre y Apellido</label> <input type="text" name="entry.1125211510" id="nombre"

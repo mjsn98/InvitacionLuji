@@ -1,0 +1,445 @@
+<html>
+
+<head>
+    <title>Mis 15 Luján</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-reboot.css">
+    <link rel="stylesheet" href="style.css?build=@version.1">
+    <link rel="stylesheet" href="animate.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200..1000;1,200..1000&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Corinthia:wght@400;700&family=Fleur+De+Leah&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link href="all.css" rel="stylesheet">
+    <style>
+        body,
+        header {
+            background-color: #f4f5f0;
+        }
+
+        h2,
+        h3,
+        .countdown .timer div,
+        header h1 {
+            font-family: "Old Standard TT", serif;
+            color: rgb(68, 68, 68);
+        }
+
+        header h1,
+        .cover .text i,
+        .timer div,
+        .countdown p,
+        .countdown a i,
+        .events .item i,
+        .social .item i,
+        .video span,
+        .gallery span,
+        .hotels span,
+        .hotels .list a i,
+        .gifts i,
+        .modalGift h3,
+        .modalGift .item .right p b,
+        .modalGift .item .right .list a h4,
+        .modalGift .closeModal i,
+        .invites i,
+        .material-symbols-outlined,
+        .invites span,
+        .confirmation .link i,
+        .confirmation .modalGift .contenido-modal .form label,
+        .confirmation .modalGift .contenido-modal span,
+        .confirmation .modalGift .contenido-modal .thanks i,
+        footer p i,
+        .content .info .text i,
+        .cover .text h1,
+        .cover.full.design .text h2,
+        .cover.design .text h2 {
+            color: #b3a5d5;
+        }
+
+        .story,
+        .gifts a,
+        .gifts button,
+        .gifts,
+        .confirmation,
+        .confirmation .modalGift .contenido-modal .form .container .checkmark:after,
+        .confirmation .modalGift .contenido-modal .form button,
+        .salon .item .right a,
+        .player .icon {
+            background-color: #b3a5d5;
+        }
+
+        .material-symbols-outlined {
+            font-size: 4rem;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body cz-shortcut-listen="true" style="overflow: hidden;">
+
+    <!-- ************************************************************************************************************
+                    INVITACIÓN
+**************************************************************************************************************-->
+
+    <div class="intro" id="intro">
+        <div class="top" id="top">
+            <div class="badge" onclick="animar();"><img src="img/sello.png"></div>
+            <img src="img/envelopet.png" class="top hiddenM">
+            <img src="img/envelopetm.png" class="top hiddenL">
+        </div>
+        <div class="bottom" id="bottom"></div>
+    </div>
+    <script src="envelope.js"></script> <span class="player" id="button">
+        <div class="icon"><img src="img/pause.png"></div>
+    </span>
+    <audio id="player" loop="">
+        <source src="mp3/Carencia_de_cordura.mp3" type="audio/mp3">
+    </audio>
+    <header>
+        <p class="text-fix mb-0">Luján Vildósola</p>
+    </header>
+    <section class="cover">
+        <div class="text">
+            <h2 style="font-family:'Great Vibes';">¡Mis 15!</h2>
+            <p>Y quiero compartirlo contigo.</p>
+            <i class="bi bi-caret-down-fill"></i>
+        </div>
+        <div class="slider" id="slider">
+            <div class="image" style="opacity: 1;"><img src="img/Pd2.jpg"></div>
+            <div class="image" style="opacity: 0;"><img src="img/Pd3.jpg"></div>
+            <div class="image" style="opacity: 0;"><img src="img/Pm1.jpg"></div>
+        </div>
+    </section>
+    <script src="slider.js"></script>
+    <section class="countdown">
+        <p class="countdown-texto" style="font-size: 20px;
+        font-weight: 200;
+        color: #b3a5d5;
+        font-family: emoji;text-transform: unset;letter-spacing: normal;">Agenda la fecha</p>
+        <h2>24 de Enero</h2>
+        <div class="d-flex justify-content-center countdown-container">
+
+            <div id="countdown" class="timer" data-init-value="01/24/2025 21:00:00">
+                <img src="img/marco-cuentaregresiva.png" alt="marco cuenta regresiva" srcset="" class="marco-countdown">
+                <div>
+                    <span class="time" id="days">32</span>
+                    <p>DÍAS</p>
+
+                </div>
+                <span class="point">:</span>
+                <div>
+                    <span class="time" id="hs">9</span>
+                    <p>HS</p>
+                </div>
+                <span class="point">:</span>
+                <div>
+                    <span class="time" id="min">18</span>
+                    <p>MIN</p>
+                </div>
+                <span class="point">:</span>
+                <div>
+                    <span class="time" id="seg">22</span>
+                    <p>SEG</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <i class="bi bi-calendar-day"></i> Agendar fecha -->
+
+    </section>
+    <script src="countdown.js"></script>
+    <section class="events position-relative">
+        <img src="img/deco-Invitacion/5.png" alt="flor 5" srcset="" class="img-flores position-absolute top-50 start-0">
+        <img src="img/deco-Invitacion/5.png" alt="flor 5" srcset="" class="img-flores position-absolute top-0 end-0">
+        <article class="item">
+
+            <span class="material-symbols-outlined">celebration</span>
+            <h2>Festejo</h2>
+            <div>
+                <p>
+                <h6>Salón Mary Mary Eventos</h6>
+                </p>
+                <p>24 de Enero, 21:00 hs.</p>
+            </div>
+            <a href="https://maps.app.goo.gl/qUxonHVe77jdMc158" target="_blank" class="d-flex"><span
+                    class="material-symbols-outlined" style="font-size:20px">
+                    location_on
+                </span>Cómo llegar</a>
+        </article>
+
+        <article class="item">
+
+            <span class="material-symbols-outlined">checkroom</span>
+            <h2>Dress Code</h2>
+            <div>
+                <p>
+                <h6>Formal - Sport</h6>
+                </p>
+            </div>
+            <a href="https://es.pinterest.com/search/pins/?q=formal%20sport%20mujer&rs=typed"
+                target="_blank">Inspirate</a>
+        </article>
+
+    </section>
+    <!-- <section class="story">
+        <div class="image">
+            <img src="img/historia.jpg" alt="mi Historia">
+        </div>
+        <div class="text">
+            <i class="fa-thin fa-heart"></i>
+
+            <h2>mi Historia</h2>
+            <p style="font-size:16px">Dicen que todos los caminos conducen a Roma. Como los mi, que un día de
+                Septiembre hace algunos años, con una selfie y un desayuno dieron como resultado atardeceres en la playa
+                y el comienzo de un amor de verano.
+                <br><br>Luego vinieron viajes, muchas risas, una mudanza, momentos compartidos en familia y aventuras
+                con amigos. Un amor de verano que se transformó en uno para toda la vida
+            </p>
+        </div> 
+    </section> -->
+    <section class="social">
+        <img src="img/deco-Invitacion/6.png" alt="flor 6" srcset="" class="img-flores position-absolute top-50 start-0">
+
+        <img src="img/deco-Invitacion/8.png" alt="flor 6" srcset="" class="img-flores position-absolute top-0 end-0">
+        <article class="item">
+            <i class="fa-brands fa-youtube"></i>
+            <h2>Mi Playlist</h2>
+            <div>
+                <p>¡Agrega mi playlist! <br> Al confirmar puedes recomendar las canciones que no pueden faltar en mi
+                    fiesta</p>
+            </div>
+            <a href="https://music.youtube.com/playlist?list=PLNFk3F_FGLWxzrKOfQ7aPUOvjj85R36eB&si=ZHNgoXWGOTd5miEz"
+                target="_blank">Ir a Youtube Music</a>
+        </article>
+
+    </section>
+    <!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Álbum de Fotos</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            .img-flores {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section class="gallery position-relative"> <img src="img/deco-Invitacion/7.png" alt="flor 6"
+                class="img-flores">
+            <h2>Álbum de Fotos</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators"> <button type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button> <button
+                        type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button> <button type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="2" aria-label="Slide 3"></button> <button type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button> <button type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide-to="5" aria-label="Slide 6"></button> <button type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"> <img src="img/01.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/02.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/03.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/04.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/05.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/06.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/07.jpg" class="d-block w-100" alt="..."> </div>
+                    <div class="carousel-item"> <img src="img/08.jpg" class="d-block w-100" alt="..."> </div>
+                </div> <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+                        class="visually-hidden">Previous</span> </button> <button class="carousel-control-next"
+                    type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"> <span
+                        class="carousel-control-next-icon" aria-hidden="true"></span> <span
+                        class="visually-hidden">Next</span> </button>
+            </div>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <section class="gifts" style="background-image: url('img/gifts.jpg');">
+            <div class="card">
+                <span class="material-symbols-outlined">
+                    featured_seasonal_and_gifts
+                </span>
+                <h2>Regalos</h2>
+                <p>Tu presencia es lo más importante para mi.<br>Si además deseas hacer un regalo, puedes hacerlo</p>
+                <button class="modal-button" href="#myModal1">Más información</button>
+            </div>
+
+
+            <div class="modalGift" id="myModal1">
+                <div class="contenido-modal">
+                    <span class="closeModal"><span class="material-symbols-outlined" style="font-size: 20px;">
+                            close
+                        </span></span>
+
+                    <!-- REGALO 1 -->
+                    <div class="item">
+                        <div class="left">
+                            <h3>Cuenta Bancaria</h3>
+                        </div>
+                        <div class="right">
+                            <p><b>Mercado Pago</b><b>Titular:</b> Lujan Vildósola<br><b>Alias:</b>lujivil</p>
+                            <p><b>CVU:</b></p>
+                            <input type="text" value="0000003100038827193890" id="GfGInput">
+                            <p id="gfg" class="gfg"></p>
+                            <span onclick="GeeksForGeeks()" value="Copy"><i class="bi bi-check2-all"></i>Copiar
+                                CBU</span>
+                        </div>
+                    </div>
+                    <!-- REGALO 2 -->
+                    <div class="item">
+                        <div class="left">
+                            <h3>Urna en Salón</h3>
+                        </div>
+                        <div class="right">
+                            <p>En caso que prefieras regalar en efectivo, tendrás a disposición una urna y sobres en el
+                                salón durante la recepción.</p>
+
+                        </div>
+                        <span class="material-symbols-outlined" style="font-size: 45px;">
+                            diagnosis
+                        </span>
+                    </div>
+                    <!-- REGALO 3 -->
+
+                    <!-- CATALOGO -->
+                </div>
+            </div>
+        </section>
+        <section class="confirmation">
+            <span class="material-symbols-outlined">
+                inventory
+            </span>
+            <h2>Confirmación de Asistencia</h2>
+            <p>Esperamos contar con tu presencia, no olvides confirmar</p>
+            <!-- DETALLES EXTRA -->
+            <button class="link modal-button" href="#myModal2" style="padding:15px 32px;"><i class="bi bi-check2-circle"
+                    style="font-size:20px;padding-right:5px;"></i>Confirmar Asistencia</button>
+
+            <div class="modalGift" id="myModal2">
+                <div class="contenido-modal">
+                    <span class="closeModal"><span class="material-symbols-outlined" style="font-size: 20px;">
+                            close
+                        </span></span>
+                    <div class="cont">
+                        <h2>Confirmación de Asistencia</h2>
+
+                        <div class="form">
+                            <div class="msj error" style="display:none">Por favor completa todos los campos</div>
+                            <form method="post"
+                                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc8Fb9EGoxOAw8HbvW6-zPPg5XSDyMcZBhXjcx8WAszOKW_wg/formResponse"
+                                onsubmit="submitForm();" target="hidden_iframe" style="width:100%;">
+                                <div class="radio"> <label class="container" style="font-weight:600;">Asistiré <input
+                                            type="radio" checked="checked" value="Asistiré" name="entry.591732756">
+                                        <span class="checkmark"></span> </label> <label class="container"
+                                        style="font-weight:600;">No Asistiré <input type="radio" value="No Asistiré"
+                                            name="entry.591732756"> <span class="checkmark"></span> </label> </div>
+                                <label>Nombre y Apellido</label> <input type="text" name="entry.1125211510" id="nombre"
+                                    value=""> <label>¿Qué canción no puede faltar?</label> <input type="text"
+                                    name="entry.963501327" id="cancion"> <label>Nombre y Apellido (acompañantes)</label>
+                                <input type="text" name="entry.270185246" id="nombre_a"> <input type="hidden" name="fvv"
+                                    value="1"> <input type="hidden" name="partialResponse"
+                                    value="[null,null,'-2857987365953344607']"> <input type="hidden" name="pageHistory"
+                                    value="0"> <input type="hidden" name="fbzx" value="-2857987365953344607"> <input
+                                    type="hidden" name="submissionTimestamp" value="1732936845192"> <button
+                                    class="submit" type="submit" name="save" style="color:#fff;"> <i
+                                        class="bi bi-check2-all" style="color:#fff;"></i>Confirmar Asistencia </button>
+                                <div id="data"></div>
+                                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                                    onload="iframeOnLoad();"></iframe>
+                            </form>
+                        </div>
+                        <div class="thanks" style="display:none;"> <i class="bi bi-check-circle-fill"></i><br>
+                            <h2>¡Gracias por confirmar tu asistencia!</h2>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <footer>
+            <p>✨ Mis 15 Luján ✨</p>
+        </footer>
+
+        <!-- ************************************************************************************************************
+                    SCRIPTS
+**************************************************************************************************************-->
+        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script>
+            var submitted = false;
+            function submitForm() {
+                submitted = true;
+            }
+            function iframeOnLoad() {
+                if (submitted) {
+                    // var modal = document.getElementById("myModal2"); 
+                    // modal.style.display = "none"; 
+                    // submitted = false;
+                    document.querySelector('.thanks').style.display = 'block';
+                    document.querySelector('.form').style.display = 'none';
+                    submitted = false;
+                }
+            } 
+        </script>
+
+        <script src="modal.js"></script>
+        <script src="lightbox.js"></script>
+        <script>
+            function GeeksForGeeks() {
+                let copyGfGText =
+                    document.getElementById("GfGInput");
+
+                copyGfGText.select();
+                document.execCommand("copy");
+
+                document.getElementById("gfg")
+                    .innerHTML = "<i class='bi bi-check2-all text-success'></i>Copiado en portapapeles!";
+            }
+
+            var button = document.getElementById("button");
+            var audio = document.getElementById("player");
+            button.addEventListener("click", function () {
+                if (audio.paused) {
+                    audio.play();
+                    button.innerHTML = "<div class='icon'><img src='img/play.gif'/></div>";
+                } else {
+                    audio.pause();
+                    button.innerHTML = "<div class='icon'><img src='img/pause.png'/></div>";
+                }
+            });
+        </script>
+
+
+    </body>
+
+    </html>
