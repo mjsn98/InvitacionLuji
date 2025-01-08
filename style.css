@@ -1891,15 +1891,17 @@ footer p a {
   text-decoration: none;
   color: #fff;
 }
+
 @media (min-width: 100px) and (max-width: 470px) {
-  
-  .img-flores{
+
+  .img-flores {
     width: 120px;
   }
 }
+
 @media (min-width: 100px) and (max-width: 1600px) {
   .cover {
-    width: calc(100% - 48px);
+    width: calc(100% - 500px);
   }
 }
 
@@ -1962,6 +1964,7 @@ footer p a {
   }
 
   .cover {
+    width: calc(100% - 48px);
     max-height: 600px;
   }
 
@@ -2219,6 +2222,7 @@ footer p a {
   }
 
   .cover {
+    width: calc(100% - 48px);
     max-height: 650px;
   }
 
@@ -2396,8 +2400,8 @@ footer p a {
   .salon .item .right {
     text-align: center;
   }
-  
-  
+
+
 }
 
 @media (min-width: 769px) and (max-width: 998px) {
@@ -2431,7 +2435,9 @@ footer p a {
   .intro .bottom {
     background-image: url("img/envelopeb.png");
   }
-
+  .cover{
+    width: calc(100% - 48px);
+  }
   .cover .text h2 {
     font-size: 40px;
   }
